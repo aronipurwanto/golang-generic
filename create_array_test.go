@@ -16,8 +16,8 @@ func NewArray[T any](b, k int) [][]T {
 func Kotak(n int) [][]int {
 	array := NewArray[int](n, n)
 	angka := 1
-	for i := 0; i < 5; i++ {
-		for k := 0; k < 5; k++ {
+	for i := 0; i < n; i++ {
+		for k := 0; k < n; k++ {
 			array[i][k] = angka
 			angka += 5
 		}
