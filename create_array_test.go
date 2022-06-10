@@ -17,8 +17,11 @@ func NewArray[T any](b, k int) [][]T {
 func Kotak(n int) [][]int {
 	array := NewArray[int](n, n)
 	angka := 1
+	// looping baris
 	for i := 0; i < n; i++ {
+		// looping kolom
 		for k := 0; k < n; k++ {
+			// mengisi array dengan menentukan index baris dan kolom
 			array[i][k] = angka
 			angka += 5
 		}
