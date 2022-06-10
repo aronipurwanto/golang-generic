@@ -17,6 +17,7 @@ func PrintBag[T any](bag Bag[T]) {
 	fmt.Println()
 }
 
+// git test
 func TestBag(t *testing.T) {
 	number := Bag[int]{1, 2, 3, 4, 5}
 	PrintBag(number)
